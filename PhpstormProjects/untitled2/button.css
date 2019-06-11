@@ -19,15 +19,17 @@ button {
     height: 60px;
     width: 200px;
     cursor: pointer;
+}
 
-&:hover {
+hover {
      background-color: #DDF7FF;
+ }
 
 svg {
     transform: rotate(10deg);
     transition: transform .15s;
 }
-}
+
 
 svg {
     position: absolute;
@@ -36,31 +38,31 @@ svg {
     height: 30px;
     width: auto;
     transition: transform .15s;
-
-path {
-    fill: #2D7586;
 }
+.path {
+    fill: #2D7586
 }
 
-&.clicked {
+
+.clicked {
      background-color: #cff5b3;
      border: 2px solid #cff5b3;
      color: #6AAA3B;
      padding-right: 6px;
      animation: bounce-in .3s;
      cursor: default;
+ }
 
 svg {
     animation: flyaway 1.3s linear;
     top: -80px;
     right: -1000px;
+}
 
 path {
     fill: #6AAA3B;
 }
-}
-}
-}
+
 
 @keyframes flyaway {
     0%   { transform: rotate(10deg);
